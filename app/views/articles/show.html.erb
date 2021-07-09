@@ -6,6 +6,7 @@
       <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
       <div class="card-text shadow p-3 mb-5 bg-white rounded"><%= simple_format(@article.description) %> </div>
       <small id="timest">Created <%= time_ago_in_words(@article.created_at) %> ago.</small>
+      <button> <%= link_to 'Back', articles_path, class: "link"  %> </button>
       <button> <%= link_to 'Edit', edit_article_path(@article), class: "link"  %> </button>
       <button> <%= link_to 'Delete', article_path(@article), method: :delete, data: {confirm: "Are you sure "}, class: "link"  %> </button>
     </div>
