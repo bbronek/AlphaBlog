@@ -1,0 +1,85 @@
+@import "bootstrap";
+
+
+.container-fluid a.navbar-brand {
+  color:rgb(255, 250, 254);
+  float:left;
+  font-size: 1.7 em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.container-fluid a.navbar-brand:hover {
+  color:rgb(191, 33, 240);
+}
+
+.navbar-nav.me-auto.mb-2.mb-lg-0 li a {
+  color:rgb(255, 250, 254);
+  text-align: center;
+  float:left;
+
+}
+.navbar-nav.me-auto.mb-2.mb-lg-0 li a:hover{
+  color: rgb(219, 154, 205);
+  ;
+}
+
+#home-container {
+  margin:auto;
+  margin-top:15px;
+  background-image: asset-url('keyboard.jpeg');
+  width:50%;
+  height:50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.card-text {
+  font-size:60px;
+  text-align: center;
+}
+.text {
+  margin:12px;
+  color:antiquewhite;
+  letter-spacing: 4px;
+}
+.btn.btn-success {
+
+  margin-top:20px;
+  padding: 10px 15px;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+#articles-card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+
+}
+
+.link {
+  text-decoration: none;
+}
+
+button {
+  background-color: rgb(194, 235, 221);
+}
+
+#btn1 {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.card-body {
+  text-align: center;
+}
+
+#timest {
+  display:block;
+  color:cornflowerblue
+}
