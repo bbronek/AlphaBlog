@@ -20,12 +20,12 @@
      <div class="form-group row mt-2">
           <%= f.label :password, class: "col-2 col-form-label text-light" %>
           <div class="col-10">
-            <%= f.password_field :email, rows: 10, class: "form-control shadow rounded", placeholder: "Enter your password" %>
+            <%= f.password_field :password, rows: 10, class: "form-control shadow rounded", placeholder: "Enter your password" %>
           </div>
     </div>
 
         <div class="form-group row justify-content-center mt-2 " style="width: 20rem; margin:auto;">
-          <%= f.submit class: "btn btn-outline-light btn-lg" %>
+          <%= f.submit "Sign up", class: "btn btn-outline-light btn-lg" %>
         </div>
           <% end %>
 
