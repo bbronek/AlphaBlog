@@ -3,7 +3,11 @@
   <div class="card" id = "articles-card" style="width: 65rem;">
     <div class="card-body">
       <h5 class="card-title"><%= article.title %></h5> 
-      <h6 class="card-subtitle mb-2 text-muted">by <%= article.user.username if article.user %> </h6>
+      <h6 class="card-subtitle mb-2 text-muted">
+        <% if article.user %>
+          by <%= link_to article.user.username, user_path(article.user) %> 
+        <% end %>
+      </h6>
       <p class="card-text shadow p-3 mb-5 bg-white rounded"><%= truncate(article.description, length: 60) %> </p>
       <button > <%= link_to 'View', article_path(article) , class: "link" %> </button>
       <button> <%= link_to 'Edit', edit_article_path(article), class: "link"  %> </button>

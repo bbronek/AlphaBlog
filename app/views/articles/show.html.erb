@@ -3,7 +3,10 @@
   <div class="card" id = "articles-card" style="width: 65rem;">
     <div class="card-body">
       <h5 class="card-title"><%= @article.title %></h5>
-      <h6 class="card-subtitle mb-2 text-muted">by <%= @article.user.username if @article.user %></h6>
+      <h6 class="card-subtitle mb-2 text-muted">
+      by <%= @article.user.username if @article.user %>
+      <%= link_to gravatar_for(@article.user), user_path(@article.user)%>
+      </h6>
       <div class="card-text shadow p-3 mb-5 bg-white rounded"><%= simple_format(@article.description) %> </div>
       <small id="timest">Created <%= time_ago_in_words(@article.created_at) %> ago.</small>
       <button> <%= link_to 'Back', articles_path, class: "link"  %> </button>

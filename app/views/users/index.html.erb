@@ -5,7 +5,7 @@
   <div class="card" id = "articles-card" style="width: 65rem;">
     <div class="card-body">
       <h5 class="card-title"><%= link_to user.username, user %></h5> 
-      <p><%= link_to gravator_for(user, size:150) %> </p>
+      <p><%= link_to gravatar_for(user, size:150) %> </p>
       <p><%= pluralize(user.articles.count, "article")%> </p>
       <button > <%= link_to 'View profile', user , class: "link" %> </button>
       <button> <%= link_to 'Edit profile', edit_user_path(user), class: "link"  %> </button>

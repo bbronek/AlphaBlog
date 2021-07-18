@@ -1,6 +1,10 @@
 <h1 class="text-center mt-4"><%= @user.username %></h1>
 
-<%= gravator_for @user, size: 200%>
+<%= gravatar_for @user, size: 200%>
+
+
+<center class="mt-4"><%= link_to "Edit your profile", edit_user_path(@user), class: "btn btn-outline-primary" %></center>
+
 
 <h1 class="text-center mt-4">Articles</h1>
 
