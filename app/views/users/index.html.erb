@@ -1,5 +1,13 @@
 <h1 class="text-center mt-4">Alpha Bloggers</h1>
 
+<div class="apple_pagination">
+  <div class="page_info">
+    <%= page_entries_info @users %>
+  </div>
+  <%= will_paginate @users, :container => false %>
+</div>
+
+
 <% @users.each do |user| %>
 
   <div class="card" id = "articles-card" style="width: 65rem;">
@@ -16,3 +24,6 @@
 <% end %>
 <br/><br/><br/>
 
+<div class="apple_pagination mb-5">
+  <%= will_paginate @users, :container => false %>
+</div>

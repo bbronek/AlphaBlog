@@ -9,9 +9,9 @@
         <% end %>
       </h6>
       <p class="card-text shadow p-3 mb-5 bg-white rounded"><%= truncate(article.description, length: 60) %> </p>
-      <button > <%= link_to 'View', article_path(article) , class: "link" %> </button>
-      <button> <%= link_to 'Edit', edit_article_path(article), class: "link"  %> </button>
-      <button> <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure "}, class: "link"  %> </button>
+      <button class="bta" > <%= link_to 'View', article_path(article) , class: "link" %> </button>
+      <button class="bta"> <%= link_to 'Edit', edit_article_path(article), class: "link"  %> </button>
+      <button class="bta"> <%= link_to 'Delete', article_path(article), method: :delete, data: {confirm: "Are you sure "}, class: "link"  %> </button>
     </div>
   </div>
 
